@@ -21,6 +21,15 @@ namespace Scrabble.Models
       return ScrabbleDictionary[letter.ToLower()];
     }
 
-  
+    public int GetWordScore()
+    {
+      int total = 0;
+      char[] wordArray = Word.ToCharArray();
+      foreach (char letter in wordArray)
+      {
+        total += ScrabbleScore.GetLetterScore(letter.ToString());
+      }
+      return total;
+    }
   }
 }

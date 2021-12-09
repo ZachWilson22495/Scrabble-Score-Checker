@@ -40,5 +40,11 @@ namespace Scrabble.Models.Tests
       Assert.AreEqual(ScrabbleScore.GetLetterScore("Z"), 10);
       Assert.AreEqual(ScrabbleScore.GetLetterScore("H"), 4);
     }
+    [TestMethod]
+    public void GetWordScore_ReturnsTotalScoreofWord_int()
+    {
+      ScrabbleScore testscore = new ScrabbleScore("checkpoint");
+      Assert.AreEqual(testscore.GetWordScore(), 23);
+    }
   }
 }
