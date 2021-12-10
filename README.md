@@ -7,6 +7,7 @@
 ## Technologies Used
 
 * C#
+* .NET
 
 ## Description
 
@@ -15,7 +16,8 @@ _Need a Scrabble cheat sheet? This program will take any word you type into it a
 ## Setup/Installation Requirements
 
 * Clone this repository to your Desktop
-* Navigate to the new folder titled 'Scrabble' and open it
+* Use your terminal to navigate to the new folder titled 'Scrabble-Score-Checker/Scrabble'
+* input 'dotnet run' into your terminal
 * input your word into the UI 
 
 ## Known Bugs
